@@ -31,9 +31,10 @@
 .header-nav-s-list{
   display: flex;
   align-items: center;
+}
+.head-main{
   border-bottom: 1px solid var(--border-conteiners);
 }
-
 
 /*webstudio*/
 /* wecstudio-section-main*/
@@ -61,8 +62,9 @@
   color: var(--main-tittle-text-color);
   width: 200px;
   height: 50px; 
-  border: 1px solid transparent;
   border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
 }
 .studio-button {
   cursor: pointer;
@@ -95,11 +97,9 @@
 }
 .what-we-do-section-images{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-.what-we-do-section-images .what-we-do-section-list:not(:first-child){
-  margin-left: 30px;
-}
+
 .first-text-section-studio-title {
   color: var(--tittle-text--color);
   font-weight: bold;
@@ -122,24 +122,21 @@
 }
 .our-team-section-members{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-.members:not(:first-child){
-  margin-left: 30px;
-}
+
 .our-team-section-members h3{
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 10px;
 }
 .our-team-section-members p{
   text-align: center;
-  margin-bottom: 30px;
 }
 .members {
  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
  border-radius: 0px 0px 4px 4px;
- border: 1px solid var(--border-conteiners);
+ padding-bottom: 30px;
  background: var(--main-tittle-text-color);
 }
 /* our team section*/
@@ -194,15 +191,15 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding: 20px 24px 4px 24px;
 }
-
+.portfolio-img-borders{
+  padding: 20px 24px;
+}
 .portfolio-images-text {
   color: var(--text-all);
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  padding: 0px 24px 20px 24px;
 }
 /*buttons on portfolio pg*/
 .portfolio-buttons{
@@ -210,7 +207,6 @@
   justify-content:center;
   border: none;
   margin-bottom: 34px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 4px;
 }
 
@@ -219,16 +215,22 @@
 }
 /*buttons active tm*/
 .buttons {
+  font-weight: 500;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 4px;
   background: var(--button-bakground);
   color: var(--tittle-text--color);
-  border: 1px solid transparent;
+  border: none;
   display: inline-block;
   padding: 6px 22px;
-  min-width: 73px;
+  
 }
 .buttons:hover {
   background: var(--buttons-active-color);
   color: var(--main-tittle-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .buttons:focus {
   background: var(--buttons-active-color);
@@ -246,9 +248,6 @@
 .footer-content{
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer-links{
-  margin-top: 20px;
 }
 .footer-links li:not(:last-child){
   margin-bottom: 9px;
@@ -268,6 +267,7 @@
 /* links */
 .link {
   color: var(--tittle-text--color);
+  font-weight: 500;
 }
 
 .link:hover {
@@ -282,6 +282,7 @@
 
 .link-adress {
   color: var(--text-all);
+  font-weight: 500;
 }
 .link-adress:hover{
     color: var(--buttons-active-color);
@@ -308,4 +309,6 @@
 }
 .foot {
   color: var(--main-tittle-text-color);
+  margin-bottom: 20px;
+  display: inline-block;
 }
